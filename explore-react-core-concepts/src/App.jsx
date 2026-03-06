@@ -9,7 +9,10 @@ function App() {
   return (
     <>
      <h3>Vite + React</h3>
-     <Todo
+
+     {/* atar output ar jonno amra todo.js ar moddo pabo */}
+
+     {/* <Todo
       task="Learn Rreact" 
       isDone={true}></Todo>
       <Todo
@@ -17,8 +20,12 @@ function App() {
        isDone={false}></Todo>
       <Todo
        task="Try JSX" 
-       isDone={true}></Todo>
-       
+       isDone={true}></Todo> */}
+
+
+
+{/* // agula display ta dakta gala neshar function gula folow korbo */}
+
      {/* <Device name="Laptop" price="5500"></Device>
      <Device name="Mobaile" price="2000"></Device>
      <Device name="Watch" price="1500"></Device>
