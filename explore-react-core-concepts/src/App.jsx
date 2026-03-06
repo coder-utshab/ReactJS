@@ -28,7 +28,6 @@ function App() {
     <>
       <h2>Vite + React</h2>
 
-
 {/* singer.jsx--------------------------------------- */}
       {
   singers.map(singer =>
