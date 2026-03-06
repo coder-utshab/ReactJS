@@ -13,6 +13,7 @@ function App() {
      <Person></Person>
      <Person></Person>
      <Student></Student>
+     <Devoloper></Devoloper>
     </>
   )
 }
@@ -26,11 +27,26 @@ function Person(){
 
 function Student(){
   return ( 
-   <div>
+   <div className='student'>
     <h3>This is a student</h3>
     <p>Name:</p>
     <p>age:</p>
   </div>
+  )
+}
+
+function Devoloper(){
+  const devoloperstyle = {
+    margin:'20px',
+    padding:'20px',
+    border:'2px solid purple',
+    borderRadious: '20px'
+  }
+  return (
+    <div style={devoloperstyle}>
+      <h5>dev devo</h5>
+      <p>Coding</p>
+    </div>
   )
 }
 export default App
