@@ -8,15 +8,23 @@ function App() {
   return (
     <>
      <h1>Vite + React</h1>
+     <Device name="Laptop" price="5500"></Device>
+     <Device name="Mobaile" price="2000"></Device>
+     <Device name="Watch" price="1500"></Device>
      <Person></Person>
-     <Person></Person>
-     <Person></Person>
-     <Person></Person>
+     {/* <Student grade="7" score="99"></Student> */}
      <Student></Student>
      <Devoloper></Devoloper>
     </>
   )
 }
+
+function Device(props){
+  // properti ka short kora props bola hocca
+  console.log(props)
+  return <h2>This Device:{props.name} price: {props.price}</h2>
+}
+
 
 function Person(){
   const age = 25;
