@@ -8,13 +8,14 @@ function App() {
   return (
     <>
      <h1>Vite + React</h1>
-     <Device name="Laptop" price="5500"></Device>
+     {/* <Device name="Laptop" price="5500"></Device>
      <Device name="Mobaile" price="2000"></Device>
      <Device name="Watch" price="1500"></Device>
      <Person></Person>
-     {/* <Student grade="7" score="99"></Student> */}
+     <Student grade="7" score="99"></Student>
+     <Student grade={12} score="85"></Student>
      <Student></Student>
-     <Devoloper></Devoloper>
+     <Devoloper></Devoloper> */}
     </>
   )
 }
@@ -26,6 +27,21 @@ function Device(props){
 }
 
 
+const {grade, score} = {grade: '7', score: '99'};
+
+function Student({grade=1, score=0}){
+  console.log(grade, score)
+  return ( 
+   <div className='student'>
+    <h3>This is a student</h3>
+    <p>Name: {grade}</p>
+    <p>score: {score}</p>
+    <p>age:</p>
+  </div>
+  )
+}
+
+
 function Person(){
   const age = 25;
   const money = 20;
@@ -33,15 +49,15 @@ function Person(){
   return <h3>I am a {person.name} with age: {age + money}</h3>
 }
 
-function Student(){
-  return ( 
-   <div className='student'>
-    <h3>This is a student</h3>
-    <p>Name:</p>
-    <p>age:</p>
-  </div>
-  )
-}
+// function Student(){
+//   return ( 
+//    <div className='student'>
+//     <h3>This is a student</h3>
+//     <p>Name:</p>
+//     <p>age:</p>
+//   </div>
+//   )
+// }
 
 function Devoloper(){
   const devoloperstyle = {
